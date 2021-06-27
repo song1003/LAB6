@@ -1,0 +1,333 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts/service.js"></script>
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>KS Physiotherapy</title>
+</head>
+<body>
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class = "container-lg">
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+
+    <nav class="navbar bg-dark text-white p-3 my-3 ">
+        <h1><img src="images/company_logo.png" width="130" height="130"> Welcome to KS Physiotherapy </h1>
+    </nav>
+
+    <div class=" p-3 my-3 border bg-light">
+        <h1 class=""> About us</h1>
+        <p style="font-size: 25px">We are a small clinic located in Ottawa Ontario</p>
+        <p style="font-size: 25px; padding-left: 1.5rem">We are committed to providing <strong>patients with efficient, convenient and healthy </strong> care to our customers</p>
+        <p style="font-size: 25px; padding-right: 1.5rem">Location: <strong>166 doc ave, Ottawa </strong> K1N 18M</p>
+    </div>
+    <!--
+    Tables are one of many ways to organize information easily.
+    It is a good way to list of prices, or services in a business website
+    https://getbootstrap.com/docs/5.0/content/tables/
+    -->
+    <div class = "p-3 my-3  bg-dark text-white">
+        <h1><strong>Our services</strong></h1>
+        <br>
+        <table class="table table-info table-hover">
+            <thead>
+                <tr>
+                    <th scope="col"><h2>Service</h2></th>
+                    <th scope="col"><h2>Description</h2></th>
+                    <th scope="col"><h2>price</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/massageTherapy.png" class="float-left" width="100" height="100"><br>MassageTherapy</td>
+                    <td>a trained, certified medical professional (massage therapist) manipulates the soft tissues of your body — muscle, connective tissue, tendons, ligaments and skin</td>
+                    <td>60$/hour</td>
+                </tr>
+           
+                <tr>
+                    <td><img src="images/acupuncture.png" class="float-left" width="100" height="100"><br>Acupuncture</td>
+                    <td>Acupuncture seeks to restore the flow of positive energy throughout your body. It also claims to remove negative energy that is causing you pain.</td>
+                    <td>70$/hour</td>
+                </tr>
+                <tr>
+                    <td><img src="images/Naturopath.png" class="float-left" width="100" height="100"><br>Naturopath</td>
+                    <td>A naturopathic doctor is a practitioner of naturopathic medicine—a system of primary health care focused on the diagnosis, treatment and prevention of illness using the healing powers of nature.</td>
+                    <td>80$/hour</td>
+                </tr>
+                <tr>
+                    <td><img src="images/Visions.png" class="float-left" width="100" height="100"><br>Visions</td>
+                    <td>prescription eye glasses, contact lenses, laser eye surgery or optometric eye examinations.</td>
+                    <td>90$/hour</td>
+                </tr>
+                
+                 <tr>
+                    <td><img src="images/TMJ.png" class="float-left" width="100" height="100"><br>TMJ Therapy</td>
+                    <td>The focus of physical therapy for temporomandibular disorders (TMDs) is relaxation, stretching, and releasing tight muscles and scar tissue. Physical therapy is an especially important part of recovery from TM joint surgery, as it helps minimize scar tissue formation and muscle tightness.</td>
+                    <td>100$/hour</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+<section id="bookappointment">
+<div class="container">
+		<h3>
+			<img src="https://img.icons8.com/ios-filled/50/000000/calendar--v1.png" width="3%">
+			Book Appointment
+		</h3>
+	<div class="row">
+		<div class="col-sm-5">
+			<div class="form-group">
+    			<label for="fst">First Name:</label>
+    			<input type="text" class="form-control" id="fst" placeholder="Enter your First Name">
+    		</div>
+			<form>
+    		<div class="form-group">
+      			<label for="sel1">Service:</label>
+      			<select class="form-control" id="servicesel">
+        			<option value="MassageTherapy">MassageTherapy (60$/hour)</option>
+        			<option value="Acupuncture">Acupuncture (70$/hour)</option>
+        			<option value="Naturopath"> Naturopath (85$/hour)</option>
+        			<option value="Visions">Visions (90$/hour)</option>
+					<option value="TMJ Therapy">TMJ Therapy (100$/hour)</option>
+					
+      			</select>
+    		</div>
+			</form>
+
+		</div>
+		<div class="col-sm-5">
+			<div class="form-group">
+    			<label for="lst">Last Name:</label>
+    			<input type="password" class="form-control" id="pwd" placeholder="Enter your Last Name">
+    		</div>
+			<form>
+    		<div class="form-group">
+      			<label for="sel1">Staff:</label>
+      			<select class="form-control" name="staffsel" id="staffsel" onChange="staffdisableDates(this.value)">
+        			<option value="Dr. Melissa">Dr. Melissa</option>
+        			<option value="Dr. Odin">Dr. Odin</option>
+        			<option value="Dr. Allan">Dr. Allan</option>
+      			</select>
+    		</div>
+			</form>
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-5">
+			    <form method="post">
+      			<div class="form-group">
+        			<label class="control-label" for="date">Date:</label>
+        			<input class="form-control datepicker" id="dateInput" name="date" placeholder="MM/DD/YYYY" type="text"/>
+      			</div>
+                  
+				</form>	
+				<div class="form-group">
+    			<label for="lst">Email:</label>
+    			<input type="password" class="form-control" id="pwd" placeholder="KSphysio@gmail.com">
+    		</div>
+		</div>
+		<div class="col-sm-5">
+			    <div class="form-group">
+      			<label for="sel1">Time:</label>
+      			<select class="form-control" id="timesel">
+                    <option value="8:00 AM">8:00 AM</option>
+					<option value="9:00 AM">9:00 AM</option>
+					<option value="10:00 AM">10:00 AM</option>
+					<option value="11:00 AM">11:00 AM</option>
+        			<option value="12:00 PM">12:00 PM</option>
+        			<option value="1:00 PM">1:00 PM</option>
+        			<option value="2:00 PM">2:00 PM</option>
+        			<option value="3:00 PM">3:00 PM</option>
+					<option value="4:00 PM">4:00 PM</option>
+					<option value="5:00 PM">5:00 PM</option>
+					<option value="6:00 PM">6:00 PM</option>
+      			</select>
+    		</div>
+				<div class="form-group">
+    			<label for="lst">Phone Number:</label>
+    			<input type="text" class="form-control error" id="phone" placeholder="613-XXX-XXXX">
+    			</div>
+		</div>
+	</div>
+	<div class="row">
+        <div class="col-sm-10">
+            <div class="card">
+                <div class="card-header">
+                    <strong>Payment</strong>
+                    
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="name">Name (As indicated on card)</label>
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="ccnumber">Credit Card Number</label>
+                                <div class="input-group">
+                                    <input class="form-control error" type="text" title="Your credit card information is required now as we need a $20 deposit incase of cancellation" placeholder="XXXX XXXX XXXX XXXX" id="creditcard">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+											<img src="https://img.icons8.com/android/24/000000/bank-card-back-side.png"/>
+                                            <!--<i class="mdi mdi-credit-card"></i>--->
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						    <div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="cvv">CVV/CVC</label>
+                                <input class="form-control" id="cvv" type="text" placeholder="111">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-3">
+                            <label for="ccmonth">Exp. Month</label>
+                            <select class="form-control" id="ccmonth">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-3">
+                            <label for="ccyear">Exp. Year</label>
+                            <select class="form-control" id="ccyear">
+                            
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                            </select>
+                        </div>
+						<div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="cvv">Postal Code</label>
+                                <input class="form-control" id="postal" type="text" placeholder="A1A2A3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+			<br>
+			<div class="row">
+		<div class="col-sm-5">
+			<div class="form-group"> <!-- Submit button -->
+        		<button class="btn btn-primary " name="submit" type="submit" style="background-color:#181718" onClick="submit()">Submit</button>
+      		</div>
+		</div>
+	</div>	
+    </div>
+</div>
+</section>
+<br>
+<br>
+<div class="container page-footer text-center" style="background-color:#e9e3e8">
+    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+    <div class=" p-3 my-3 bg-dark text-white">
+        <h1><strong>our team!</strong></h1>
+        <br>
+        <div class="row justify-content-around">
+            <div class="card bg-dark " style="width: 18rem;">
+                <img src="images/doctor.png " width="200" height="200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4>Dr. Melissa</h4>
+                    <br>
+                    <p class="card-text">Dr. Melissa is our best Massage therapy with over 9 years experience.</p>
+                </div>
+            </div>
+            <div class="card bg-dark " style="width: 18rem;">
+                <img src="images/doctor2.png" width="200" height="200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4>Dr. Odin</h4>
+                    <br>
+                    <p class="card-text">Dr. Odin is our vision tester, can accurately measure vision and give corresponding suggestions </p>
+                </div>
+            </div>
+            <div class="card bg-dark" style="width: 18rem;">
+                <img src="images/doctor3.png" width="200" height="200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4>Dr. Allan</h4>
+                    <br>
+                    <p class="card-text">Dr. Allan is our acupuncturist, specializing in technique, and has been engaged in related work for ten years</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class=" p-3 my-3 border bg-light">
+        <h1><strong>Contact us</strong></h1>
+        <br>
+        <p>Phone Number: (613)-8888888</p>
+        <br>
+        <p>Email: KSphysio@gmail.com</p>
+        <br>
+        <p>Office Hours: 8am-6pm </p>
+    </div>
+    
+
+    <!--
+    We can also use buttons to expand some hidden options
+    https://getbootstrap.com/docs/5.0/components/collapse/
+    -->
+    
+
+
+
+</div>
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+<footer>
+    <p id="signature">Site created by KS</p>
+
+    </div>
+    
+</footer>
+</html>

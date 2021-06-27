@@ -1,0 +1,18 @@
+p{
+    font-size: 20px;
+    font-family:sans-serif;
+}
+.btn{
+    font-family:sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+td{
+    font-size: 25px;
+}
+
+#signature{
+	text-align: right;
+	font-style: italic;
+	font-size: 85%;
+}
